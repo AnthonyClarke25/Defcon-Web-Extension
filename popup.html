@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Services Pools</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        body {
+            display: grid;
+            text-align: center;
+            background-color: #045980;
+            font: 1em/1.5em "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: rgba(255, 255, 255, 0.87);
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        
+        img#defcon2 {
+            display: inline-block;
+            margin: 0 auto;
+            max-height: 150px;
+        }
+        
+        h1 {
+            margin: 0;
+            padding: 0;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        a:link,
+        a:visited,
+        a:hover {
+            color: whitesmoke;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+            text-align: left;
+        }
+        
+        table {
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pool Status</h1>
+    </header>
+
+    <img id="defcon2" src="" alt="image">
+
+    <table id="Pools">
+        <tr>
+            <th>Customer Services</th>
+            <th>Service Desk</th>
+            <th>Recalls</th>
+            <th>Critical</th>
+
+        </tr>
+        <tr>
+            <td>
+                <a id="firstline" href="http://dashboards.prospectsoft.local/crm/index.php?tab=new"></a>
+            </td>
+            <td>
+                <a id="secondline" href="http://dashboards.prospectsoft.local/crm/index.php?tab=secondline"></a>
+            </td>
+            <td>
+                <a id="recalls" href="http://dashboards.prospectsoft.local/crm/index.php?tab=recalls"></a>
+            </td>
+            <td>
+                <a id="critical" href="http://dashboards.prospectsoft.local/crm/index.php?tab=critical"></a>
+            </td>
+
+
+        </tr>
+
+    </table>
+
+    <table id="defcon-limits">
+        <tr>
+            <th>Defcon</th>
+            <th>Limits</th>
+            <th>Current level</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>100+</td>
+            <td id="openTicketCount0"></td>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>85 - 99</td>
+            <td id="openTicketCount1"></td>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>70 - 84</td>
+            <td id="openTicketCount2"></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>55 - 69</td>
+            <td id="openTicketCount3"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>40 - 54</td>
+            <td id="openTicketCount4"></td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>0 - 39</td>
+            <td id="currentdefcon5"></td>
+
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>
